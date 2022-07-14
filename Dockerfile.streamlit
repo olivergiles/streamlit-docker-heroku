@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt \
 
 USER runner
 
-EXPOSE 8080
+EXPOSE 8501
 
-CMD streamlit run app.py --server.port $PORT
+CMD streamlit run app.py --reload
